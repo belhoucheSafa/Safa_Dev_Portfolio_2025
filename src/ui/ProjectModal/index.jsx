@@ -104,32 +104,6 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               <div className="screen__content">
                 <div className="preview__box">
                   <div className="web__demo">
-                    {/* <Plyr
-                      ref={playerRef}
-                      source={{
-                        type: "video",
-                        sources: [
-                          {
-                            src: project.video,
-                            type: "video/mp4",
-                          },
-                        ],
-                      }}
-                      options={{
-                        autoplay: false,
-                        controls: [
-                          "play-large",
-                          "play",
-                          "progress",
-                          "current-time",
-                          "mute",
-                          "volume",
-                          "fullscreen",
-                        ],
-                      }}
-                      attributes={{ preload: "auto" }}
-                    /> */}
-
                     <video
                       key={project.video}
                       ref={playerRef}
@@ -157,25 +131,15 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                     }`}
                   >
                     {project.mobileVideo ? (
-                      <Plyr
-                        source={{
-                          type: "video",
-                          sources: [
-                            {
-                              src: project.mobileVideo,
-                              type: "video/mp4",
-                            },
-                          ],
-                        }}
-                        options={{
-                          autoplay: false,
-                          controls: [
-                            "play-large",
-                            "play",
-                            "progress",
-
-                            "fullscreen",
-                          ],
+                      <video
+                        key={project.mobileVideo}
+                        ref={playerRef}
+                        src={project.mobileVideo}
+                        controls
+                        preload="auto"
+                        style={{
+                          width: "100%",
+                          borderRadius: "10px",
                         }}
                       />
                     ) : (
