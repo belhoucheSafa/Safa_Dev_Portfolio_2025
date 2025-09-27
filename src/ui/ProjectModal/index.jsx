@@ -67,6 +67,16 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
     };
   }, [isOpen, onClose]);
 
+  useEffect(() => {
+    if (!isOpen && playerRef.current) {
+      const video = playerRef.current;
+      video.pause();
+      video.currentTime = 0;
+      video.removeAttribute("src"); // unload
+      video.load(); // reset completely
+    }
+  }, [isOpen]);
+
   if (!isOpen && animationClass === "") return null;
 
   return (
@@ -90,11 +100,11 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                   {project.title}
                 </div>
               </div>
-               
+
               <div className="screen__content">
                 <div className="preview__box">
                   <div className="web__demo">
-                    <Plyr
+                    {/* <Plyr
                       ref={playerRef}
                       source={{
                         type: "video",
@@ -117,11 +127,22 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                           "fullscreen",
                         ],
                       }}
-                      attributes={{
-                        preload: "metadata",
+                      attributes={{ preload: "auto" }}
+                    /> */}
+
+                    <video
+                      key={project.video}
+                      ref={playerRef}
+                      src={project.video}
+                      controls
+                      preload="auto"
+                      style={{
+                        width: "100%",
+                        borderRadius: "10px",
                       }}
                     />
                   </div>
+                  <div className="bottom__box_demo"></div>
                 </div>
                 <div
                   className={`demo__details__box ${

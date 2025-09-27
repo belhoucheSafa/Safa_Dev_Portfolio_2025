@@ -33,7 +33,7 @@
 }
 
 .modal-background {
-  display: table-cell;
+  display: flex;
   background: rgb(0 0 0 / 59%);
   text-align: center;
   vertical-align: middle;
@@ -57,10 +57,6 @@
   display: flex;
   border-radius: 10px;
   position: relative;
-  width: 100%;
-  height: 100%;
-  /* height: 95vh;
-  max-height: 95vh; */
   margin: auto;
   flex-direction: column;
   gap: 20px;
@@ -69,7 +65,15 @@
   padding: 15px;
   z-index: 10;
   pointer-events: auto;
+
+   width: 95vw;
+  height: 95vh; /* 👈 force modal size */
+  max-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+
 
 #modal-container.one {
   transform: scaleY(0.01) scaleX(0);
@@ -206,12 +210,11 @@
 .screen__content {
   flex: 1;
   width: 100%;
-  /* border: 1px solid white; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 30px;
-  align-items: flex-start;
+   align-items: stretch;
 }
 
 .preview__box {
@@ -227,10 +230,9 @@
 }
 
 .web__demo {
-  background: rgb(0 0 0 / 59%);
+  /* background: rgb(0 0 0 / 59%); */
   width: 100%;
-  /* min-height: 500px; */
-  max-height: 500px;
+  height: fit-content;
   border-radius: 10px;
 }
 .bottom__box__demo {
