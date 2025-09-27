@@ -90,6 +90,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                   {project.title}
                 </div>
               </div>
+               
               <div className="screen__content">
                 <div className="preview__box">
                   <div className="web__demo">
@@ -121,7 +122,6 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                       }}
                     />
                   </div>
-                  {/* <div className="bottom__box__demo"></div> */}
                 </div>
                 <div
                   className={`demo__details__box ${

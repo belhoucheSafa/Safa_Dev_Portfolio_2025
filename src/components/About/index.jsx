@@ -139,9 +139,7 @@ const About = () => {
             </div>
           </div>
 
-          {/* Row 2 */}
           <div className="about__cards__row">
-            {/* Left Card */}
             <div className="about__card about__card__3__left">
               <div
                 ref={grid2Container}
@@ -178,7 +176,6 @@ const About = () => {
               </div>
             </div>
 
-            {/* Right Card */}
             <div className="about__card about__card__4__right">
               <div className="collab__text">
                 I'm Committed to Collaboration and Clear Communication

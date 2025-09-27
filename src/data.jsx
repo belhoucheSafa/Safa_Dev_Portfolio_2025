@@ -43,7 +43,7 @@ import BridgeEd from "./assets/projectsDemos/BridgeEdProject.mp4";
 import StockManagementAppMobile from "./assets/projectsDemos/StockManagementAppMobile.mp4";
 import McLaren from "./assets/projectsDemos/McLaren.mp4";
 import CoffeeAnimation from "./assets/projectsDemos/CoffeeAnimation.mp4";
-import DonutsAnimation from "./assets/projectsDemos/streaDonuts.mp4";
+import DonutsAnimation from "./assets/projectsDemos/Donuts.mp4";
 
 
 export const menu = [
@@ -101,8 +101,6 @@ export const projects = [
 const project = {
   name: "Recycling Plastic Landing Page",
   description: \`A modern, fully designed landing page for a recycling plastic business. The business collects plastic bottles from suppliers and transforms them into multiple types of granules. The landing page features a unique design with smooth pastel colors, 3D icons, and custom images. I handled the full UI/UX design.\`,
-  techs: ["React", "SCSS"],
-  github: "Contact me for the code 😉",
   tasks: [
     "Full UI/UX design",
     "3D icons and images",
@@ -135,8 +133,6 @@ const project = {
 const project = {
   name: "Recycling Plastic Admin Platform",
   description: \`A platform for managing the recycling business operations. Built with React, Node.js, MongoDB, JWT authentication, ApexCharts, and SCSS. The system manages admins, employees, suppliers, orders, and products securely with full CRUD functionality.\`,
-  techs: ["React", "Node.js", "MongoDB", "JWT", "ApexCharts", "SCSS"],
-  github: "Contact me for the code 😉",
   tasks: [
     "Admin, employees, clients, orders, suppliers, stock and products management",
     "Orders and products CRUD",
@@ -167,8 +163,6 @@ const project = {
 const project = {
   name: "Splyt Protein Landing Page",
   description: \`A highly modern landing page for Splyt Protein, a fizzy beverage. Built with React, TailwindCSS, and GSAP. Every section includes smooth modern animations, 3D effects, and interactive elements. This project was my first time using GSAP, and I applied it while learning in a Three.js + GSAP bootcamp.\`,
-  techs: ["React", "TailwindCSS", "GSAP"],
-  github: "Contact me for the code 😉",
   tasks: [
     "GSAP animations for all sections",
     "3D effects and interactive design",
@@ -199,8 +193,6 @@ const project = {
 const project = {
   name: "RefineGaming Landing Page",
   description: \`A modern animated gaming-themed landing page. Built with GSAP and Three.js for immersive 3D effects and animations, styled with TailwindCSS and shadcn. Inspired by my Splyt Protein project, this one pushes interactivity even further for a futuristic gaming feel.\`,
-  techs: ["React", "TailwindCSS", "GSAP", "Three.js", "shadcn"],
-  github: "Contact me for the code 😉",
   tasks: [
     "GSAP-driven animations",
     "Three.js immersive 3D visuals",
@@ -232,8 +224,6 @@ const project = {
 const project = {
   name: "Stock Management App (Web + Mobile)",
   description: \`A complete stock management system with both web and mobile apps. The web app provides CRUD operations, role-based access (admins & technicians), stock alerts, and preventive maintenance planning for machines. Technicians can scan QR codes of articles and machines to update stock in real time. The mobile app (built with Expo) integrates seamlessly with the web backend.\`,
-  techs: ["React", "Node.js", "JWT", "Expo"],
-  github: "Contact me for the code 😉",
   tasks: [
     "Web app: CRUD, role-based access, preventive maintenance planning",
     "Mobile app: QR scanning with live stock updates",
@@ -265,8 +255,6 @@ const project = {
 const project = {
   name: "BluePapilio Aesthetic Shop",
   description: \`BluePapilio is a modern e-commerce platform for aesthetic and specialized articles. Built with Django and SQLite, it provides admin and client access, product management, and a highly aesthetic landing page tailored for design-focused audiences.\`,
-  techs: ["Django", "SQLite"],
-  github: "Contact me for the code 😉",
   tasks: [
     "Modern landing page UI",
     "Admin & client role-based access",
@@ -298,8 +286,6 @@ const project = {
 const project = {
   name: "BridgeEd (BridgeCare Prototype)",
   description: \`BridgeEd (BridgeCare) is my personal idea and prototype: a mobile application to assist seniors with Alzheimer’s through cognitive stimulation games. The app offers tailored interfaces for seniors, categorized games to train memory and attention, and monitoring tools for caregivers to track progress. It’s a social-innovation project designed and owned by me as part of my academic PSC, combining technical skills with social impact.\`,
-  techs: ["React", "shadcn", "Node.js", "MongoDB"],
-  github: "Contact me for the code 😉",
   tasks: [
     "Cognitive stimulation games for seniors",
     "Senior-friendly UI",
@@ -326,8 +312,6 @@ const project = {
 const project = {
   name: "McLaren Animated Landing Page",
   description: \`A sleek Figma prototype for a McLaren-themed landing page. It features smooth animations, a modern layout, and a drag-enabled carousel to showcase cars in an engaging, interactive way.\`,
-  techs: ["Figma"],
-  github: "UI/UX Prototype - Contact me for details 😉",
   tasks: [
     "Landing page UI design",
     "Smooth animations",
@@ -353,8 +337,6 @@ const project = {
 const project = {
   name: "Donut Pricing Landing Page",
   description: \`A fun and colorful Figma prototype for a donut shop landing page. It integrates modern animations and an interactive pricing section that makes the experience visually appealing and engaging.\`,
-  techs: ["Figma"],
-  github: "UI/UX Prototype - Contact me for details 😉",
   tasks: [
     "Landing page UI design",
     "Interactive pricing section",
@@ -380,8 +362,6 @@ const project = {
 const project = {
   name: "Coffee Shop Mobile Prototype",
   description: \`A mobile Figma prototype for a coffee shop ordering experience. The flow covers everything from selecting coffee type, size, and quantity to preparing the order, enhanced with smooth, modern animations.\`,
-  techs: ["Figma"],
-  github: "UI/UX Prototype - Contact me for details 😉",
   tasks: [
     "Full coffee order flow design",
     "Modern mobile animations",
