@@ -1,0 +1,7 @@
+.logos__loop__wrapper {
+  /* border: 1px solid red; */
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 150px 0 50px 0;
+}

@@ -1,0 +1,237 @@
+#experience {
+  display: flex; /* flex-center */
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(50px);
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  backdrop-filter: blur(50px);
+  z-index: 10;
+}
+.back-vid {
+  height: 100%;
+  width: 100%;
+}
+
+/* Inner container spacing */
+.experience-inner {
+  margin-top: 100px;
+  position: relative;
+}
+
+.experience-cards {
+  position: relative;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem; /* space-y-10 */
+}
+
+/* Exp card layout */
+.exp-card-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  gap: 2.5rem; /* gap-10 */
+}
+/* @media (min-width: 1280px) {
+  .exp-card-wrapper {
+    flex-direction: row;
+    gap: 5rem; 
+  }
+} */
+
+/* Left and right width control */
+.exp-card-wrapper .left {
+  width: 100%;
+  display: none;
+}
+/* @media (min-width: 1280px) {
+  .exp-card-wrapper .left {
+    width: 33.333%; 
+  }
+} */
+
+.exp-card-wrapper .right {
+  width: 100%;
+  flex: 1;
+}
+/* @media (min-width: 1280px) {
+  .exp-card-wrapper .right {
+     width: 66.666%;
+  }
+} */
+
+/* Timeline wrapper + line */
+.timeline-wrapper {
+  position: absolute;
+  top: 0;
+  left: 2.5rem;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.timeline {
+  position: absolute;
+  top: -2.5rem; /* -top-10 */
+  z-index: 30;
+  height: 110%;
+  width: 3.5rem; /* w-14 */
+  background-color: var(--color-ui-1);
+}
+@media (min-width: 768px) {
+  .timeline {
+    width: 7rem; /* md:w-28 */
+  }
+}
+
+.gradient-line {
+  width: 0.25rem; /* w-1 */
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(69, 222, 196, 0) 0%,
+    #62e0ff 25%,
+    #52aeff 37.51%,
+    #fd5c79 62.83%,
+    #6d45ce 92.91%
+  );
+}
+
+/* Timeline logo */
+.timeline-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+  border: 1px solid #1c1c21;
+  background-color: #121214;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  transform: translate(40%, -10%);
+  padding: 6px;
+}
+/* @media (min-width: 768px) {
+  .timeline-logo {
+    width: 5rem; 
+    height: 5rem;
+    transform: translateY(-1.75rem);
+  }
+} */
+
+/* Exp text wrapper */
+.expText {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem; /* gap-5 */
+  position: relative;
+  z-index: 20;
+}
+
+.date {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.date-calendar-img {
+  width: 18px;
+  object-fit: contain;
+  margin-top: -5px;
+}
+@media (min-width: 768px) {
+  .expText {
+    gap: 2.5rem; /* md:gap-10 */
+  }
+}
+@media (min-width: 1280px) {
+  .expText {
+    gap: 5rem; /* xl:gap-20 */
+  }
+}
+
+/* Typography */
+.expText h1 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.expText p {
+  color: #adb2b8;
+  font-size: 17px;
+  font-weight: 500;
+}
+.expText p.italic {
+  color: #adb2b8;
+  font-style: italic;
+}
+.expText ul {
+  list-style-type: none;
+  margin-left: 28px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #fff;
+}
+.expText ul li {
+  font-size: 16px;
+  font-weight: 400;
+}
+.expText .my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.glow__card__exp__img__wrapper {
+  width: fit-content;
+  height: fit-content;
+}
+
+.exp__details__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 40px;
+}
+
+.exp__details__wrapper .left__details {
+  /* border: 1px solid purple; */
+  width: 100%;
+  height: fit-content;
+}
+.exp__details__wrapper .right__details {
+  /* border: 1px solid orange; */
+  width: 40%;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .exp__details__wrapper {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    align-items: flex-start;
+  }
+  .exp__details__wrapper .right__details {
+    width: 90%;
+  }
+
+  .experience-inner {
+    padding: 0px;
+  }
+
+  .left__details {
+    margin-left: 2%;
+  }
+}
