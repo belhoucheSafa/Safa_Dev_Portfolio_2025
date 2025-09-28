@@ -116,7 +116,9 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                       }}
                     />
                   </div>
-                  <div className="bottom__box_demo"></div>
+                  <div className="bottom__box__demo">
+                    Copyright © All right reserved to Safa Belhouche
+                  </div>
                 </div>
                 <div
                   className={`demo__details__box ${
