@@ -54,7 +54,7 @@ const Navbar = () => {
       </aside>
       <div className="flex__center buttons__wrapper">
         <a
-          href="/SafaBelhoucheCV.pdf"
+          href="/Safa_Belhouche_CV_EN.pdf"
           download="SafaBelhouch_CV.pdf"
           className="download__cv__btn"
         >

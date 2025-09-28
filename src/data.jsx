@@ -10,6 +10,17 @@ import { FaCode, FaProjectDiagram } from "react-icons/fa";
 
 import {
   project1,
+  BluePapilio__Project,
+  BridgeConnect__Project,
+  MezoughiDash_Project,
+  MezoughiLanding_Project,
+  RefineGaming_Project,
+  Splyt_Project,
+  StockManagement_Project,
+  Coffee_Project,
+  Donuts_Project,
+  McLaren_Project,
+
   tailwind,
   react,
   emailicon,
@@ -30,7 +41,7 @@ import {
   typescript,
   css,
   html,
-  figma
+  figma,
 } from "./assets";
 
 import MezoughiLandingPage from "./assets/projectsDemos/MezoughiLandingPage.mp4";
@@ -44,7 +55,6 @@ import StockManagementAppMobile from "./assets/projectsDemos/StockManagementAppM
 import McLaren from "./assets/projectsDemos/McLaren.mp4";
 import CoffeeAnimation from "./assets/projectsDemos/CoffeeAnimation.mp4";
 import DonutsAnimation from "./assets/projectsDemos/Donuts.mp4";
-
 
 export const menu = [
   { name: "About" },
@@ -84,11 +94,10 @@ export const services = [
   },
 ];
 
-
 export const projects = [
   {
     title: "Recycling Plastic Landing Page",
-    image: project1,
+    image: MezoughiLanding_Project,
     category: "Landing Page",
     description: `A modern, fully designed landing page for a recycling plastic business. The business collects plastic bottles from suppliers and transforms them into multiple types of granules. The landing page features a unique design with smooth pastel colors, 3D icons, and custom images. I handled the full UI/UX design.`,
     demoLink: "https://google.com/",
@@ -116,7 +125,7 @@ const project = {
   },
   {
     title: "Recycling Plastic Admin Platform",
-    image: project1,
+    image: MezoughiDash_Project,
     category: "Web App | Platform",
     description: `A platform for managing the recycling business operations. Built with React, Node.js, MongoDB, JWT authentication, ApexCharts, and SCSS. The system manages admins, employees, suppliers, orders, and products securely with full CRUD functionality.`,
     demoLink: "https://google.com/",
@@ -149,7 +158,7 @@ const project = {
   },
   {
     title: "Splyt Protein Landing Page",
-    image: project1,
+    image: Splyt_Project,
     category: "Landing Page",
     description: `A highly modern landing page for Splyt Protein, a fizzy beverage. Built with React, TailwindCSS, and GSAP. Every section includes smooth modern animations, 3D effects, and interactive elements. This project was my first time using GSAP, and I applied it while learning in a Three.js + GSAP bootcamp.`,
     demoLink: "https://google.com/",
@@ -178,7 +187,7 @@ const project = {
   },
   {
     title: "RefineGaming Landing Page",
-    image: project1,
+    image: RefineGaming_Project,
     category: "Landing Page",
     description: `A modern animated gaming-themed landing page. Built with GSAP and Three.js for immersive 3D effects and animations, styled with TailwindCSS and shadcn. Inspired by my Splyt Protein project, this one pushes interactivity even further for a futuristic gaming feel.`,
     demoLink: "https://google.com/",
@@ -208,7 +217,7 @@ const project = {
   },
   {
     title: "Stock Management App (Web + Mobile)",
-    image: project1,
+    image: StockManagement_Project,
     category: "Web & Mobile App",
     description: `A complete stock management system with both web and mobile apps. The web app provides CRUD operations, role-based access (admins & technicians), stock alerts, and preventive maintenance planning for machines. Technicians can scan QR codes of articles and machines to update stock in real time. The mobile app (built with Expo) integrates seamlessly with the web backend.`,
     demoLink: "https://google.com/",
@@ -219,7 +228,7 @@ const project = {
       { name: "Expo (React Native)", logo: expo },
     ],
     video: StockManagementApp,
-    mobileVideo : StockManagementAppMobile,
+    mobileVideo: StockManagementAppMobile,
     projectCode: `
 const project = {
   name: "Stock Management App (Web + Mobile)",
@@ -239,7 +248,7 @@ const project = {
   },
   {
     title: "BluePapilio Aesthetic Shop",
-    image: project1,
+    image: BluePapilio__Project,
     category: "Django Web App",
     description: `BluePapilio is a modern e-commerce platform for aesthetic and specialized articles. Built with Django and SQLite, it provides admin and client access, product management, and a highly aesthetic landing page tailored for design-focused audiences.`,
     demoLink: "https://google.com/",
@@ -270,7 +279,7 @@ const project = {
   },
   {
     title: "BridgeEd (BridgeCare Prototype)",
-    image: project1,
+    image: BridgeConnect__Project,
     category: "Mobile App | PSC Project",
     description: `BridgeEd is a web-based prototype I personally designed and initiated to support seniors with Alzheimer’s through cognitive stimulation. It provides a clear, accessible interface, a set of categorized games to enhance memory and attention, and a monitoring space for caregivers to follow progress and habits. Developed within my academic PSC, BridgeEd reflects both technical expertise and a commitment to social innovation, highlighting my ownership of the concept and design.`,
     demoLink: "https://google.com/",
@@ -302,7 +311,7 @@ const project = {
 
   {
     title: "McLaren Animated Landing Page",
-    image: project1,
+    image: McLaren_Project,
     category: "UI/UX | Prototype",
     description: `A sleek Figma prototype for a McLaren-themed landing page. It features smooth animations, a modern layout, and a drag-enabled carousel to showcase cars in an engaging, interactive way.`,
     demoLink: "https://google.com/",
@@ -327,7 +336,7 @@ const project = {
   },
   {
     title: "Donut Pricing Landing Page",
-    image: project1,
+    image: Donuts_Project,
     category: "UI/UX | Prototype",
     description: `A fun and colorful Figma prototype for a donut shop landing page. It integrates modern animations and an interactive pricing section that makes the experience visually appealing and engaging.`,
     demoLink: "https://google.com/",
@@ -352,7 +361,7 @@ const project = {
   },
   {
     title: "Coffee Shop Mobile Prototype",
-    image: project1,
+    image: Coffee_Project,
     category: "UI/UX | Prototype",
     description: `A mobile Figma prototype for a coffee shop ordering experience. The flow covers everything from selecting coffee type, size, and quantity to preparing the order, enhanced with smooth, modern animations.`,
     demoLink: "https://google.com/",

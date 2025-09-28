@@ -3,6 +3,20 @@
 // Projects images export
 export { default as project1 } from "./project-1.png";
 
+export { default as BluePapilio__Project } from "./ProjectsDemosScreenshots/BluePapilio__Project.png";
+export { default as BridgeConnect__Project } from "./ProjectsDemosScreenshots/BridgeConnect__Project.png";
+export { default as MezoughiDash_Project } from "./ProjectsDemosScreenshots/MezoughiDash_Project.png";
+export { default as MezoughiLanding_Project } from "./ProjectsDemosScreenshots/MezoughiLanding_Project.png";
+export { default as RefineGaming_Project } from "./ProjectsDemosScreenshots/RefineGaming_Project.png";
+export { default as Splyt_Project } from "./ProjectsDemosScreenshots/Splyt__Project.jpg";
+export { default as StockManagement_Project } from "./ProjectsDemosScreenshots/StockManagement_Project.png";
+export { default as Coffee_Project } from "./ProjectsDemosScreenshots/Coffee__Project.jpg";
+export { default as Donuts_Project } from "./ProjectsDemosScreenshots/Donuts__project.jpg";
+export { default as McLaren_Project } from "./ProjectsDemosScreenshots/McLaren__project.jpg";
+
+
+
+
 // Icons export (original set)
 export { default as sketch } from "./icons/sketch.svg";
 export { default as xd } from "./icons/xd.svg";
