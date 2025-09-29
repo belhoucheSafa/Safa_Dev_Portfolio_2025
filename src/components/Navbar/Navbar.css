@@ -130,8 +130,27 @@
   font-size: 14px;
 }
 
+/* Default: desktop */
+.sidebar__bottom {
+  display: none;
+}
+
+.desktop-only {
+  display: flex;
+}
+
 /* Responsiveness */
 @media (max-width: 900px) {
+  .desktop-only {
+    display: none; /* Hide navbar CV button */
+  }
+
+  .sidebar__bottom {
+    display: flex; /* Show CV button inside sidebar */
+    padding: 20px;
+    justify-content: center;
+  }
+
   .navbar {
     top: 0;
     width: 100%;
@@ -167,11 +186,18 @@
   }
 
   .navbar .sidebar__middle {
-    flex: 1;
+    /* flex: 1; */
     flex-direction: column;
     align-items: stretch;
     gap: 0;
     padding: 20px;
+  }
+
+  .navbar .sidebar__bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .navbar .menu,
@@ -180,6 +206,6 @@
   }
 
   .download__cv__btn {
-    display: none;
+    /* display: none; */
   }
 }

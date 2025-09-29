@@ -91,7 +91,8 @@
   transition: transform 0.3s ease;
 }
 
-.project__card .picture:hover img {
+.project__card .picture:hover img ,
+.project__card:hover .picture img {
   transform: scale(1.1);
 }
 
@@ -107,6 +108,13 @@
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  border-radius: 15px;
+}
+
+.project__card:hover .picture .overlay,
+.project__card .picture:hover .overlay
+ {
+  opacity: 1;
 }
 
 .project__card .picture:hover .overlay {
@@ -225,6 +233,5 @@
 
   .project__card .picture {
     height: 250px;
-    
   }
 }

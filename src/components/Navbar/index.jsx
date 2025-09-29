@@ -28,14 +28,13 @@ const Navbar = () => {
         <div className="flex sidebar__top">
           <span
             className="icon__container close__btn"
-            onClick={() => {
-              setShowSideBar(!showSideBar);
-            }}
+            onClick={() => setShowSideBar(false)}
           >
             <FaTimes />
           </span>
         </div>
-        <div className={` flex sidebar__middle`}>
+
+        <div className="flex sidebar__middle">
           {menu.map((list, index) => (
             <Link
               to={list.name.toLocaleLowerCase()}
@@ -51,12 +50,25 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
+
+        <div className="sidebar__bottom">
+          <a
+            href="/Safa_Belhouche_CV.pdf"
+            download="SafaBelhouch_CV.pdf"
+            className="download__cv__btn"
+          >
+            <div className="download__cv__btn-inner">
+              <p>Download CV</p>
+            </div>
+          </a>
+        </div>
       </aside>
+
       <div className="flex__center buttons__wrapper">
         <a
-          href="/Safa_Belhouche_CV_EN.pdf"
+          href="/Safa_Belhouche_CV.pdf"
           download="SafaBelhouch_CV.pdf"
-          className="download__cv__btn"
+          className="download__cv__btn desktop-only"
         >
           <div className="download__cv__btn-inner">
             <p>Download CV</p>
@@ -65,9 +77,7 @@ const Navbar = () => {
 
         <FaBarsStaggered
           className="menu"
-          onClick={() => {
-            setShowSideBar(!showSideBar);
-          }}
+          onClick={() => setShowSideBar(!showSideBar)}
         />
       </div>
     </nav>

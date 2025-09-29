@@ -216,9 +216,7 @@
 }
 
 @media (max-width: 900px) {
-  #experience > .section__wrapper {
-    padding: 0;
-  }
+ 
   .exp__details__wrapper {
     /* border: 1px solid green; */
     display: flex;
