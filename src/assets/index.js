@@ -13,7 +13,8 @@ export { default as StockManagement_Project } from "./ProjectsDemosScreenshots/S
 export { default as Coffee_Project } from "./ProjectsDemosScreenshots/Coffee__Project.jpg";
 export { default as Donuts_Project } from "./ProjectsDemosScreenshots/Donuts__project.jpg";
 export { default as McLaren_Project } from "./ProjectsDemosScreenshots/McLaren__project.jpg";
-
+export { default as PolySchool_Project } from "./ProjectsDemosScreenshots/PolySchool_Project.png";
+export { default as PolyPSC_Project } from "./ProjectsDemosScreenshots/PolyPscManagement_Project.png";
 
 
 

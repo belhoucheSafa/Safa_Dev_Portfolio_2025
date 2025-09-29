@@ -20,7 +20,8 @@ import {
   Coffee_Project,
   Donuts_Project,
   McLaren_Project,
-
+  PolySchool_Project,
+  PolyPSC_Project,
   tailwind,
   react,
   emailicon,
@@ -55,6 +56,8 @@ import StockManagementAppMobile from "./assets/projectsDemos/StockManagementAppM
 import McLaren from "./assets/projectsDemos/McLaren.mp4";
 import CoffeeAnimation from "./assets/projectsDemos/CoffeeAnimation.mp4";
 import DonutsAnimation from "./assets/projectsDemos/Donuts.mp4";
+import PolySchool from "./assets/projectsDemos/PolySchoolProject.mp4";
+import PolyPSC from "./assets/projectsDemos/PSCProject.mp4";
 
 export const menu = [
   { name: "About" },
@@ -309,6 +312,69 @@ const project = {
     `,
   },
 
+  {
+    title: "PolySchool – Web School Platform",
+    image: PolySchool_Project,
+    category: "Web App | PFE Project",
+    description: `PolySchool is a large-scale web application developed as my final-year (PFE) project in Business Intelligence. Built with the MERN stack, it provides a full digital ecosystem for schools: student management, staff and teacher portals, payments, courses, classes, department structures, certifications, community spaces, and LMS-like features. I handled everything end-to-end, from need identification and conception to UI/UX design and full coding over 9 months.`,
+    demoLink: "https://google.com/",
+    stacks: [
+      { name: "React", logo: react },
+      { name: "Node.js", logo: nodejs },
+      { name: "MongoDB", logo: mongodb },
+      { name: "JWT", logo: jwt },
+      { name: "ApexCharts", logo: apex },
+    ],
+    video: PolySchool,
+    projectCode: `
+const project = {
+  name: "PolySchool – Web School Platform",
+  description: \`PolySchool is a large-scale MERN web application for school management. It handles students, staff, courses, payments, certifications, community spaces, and LMS features. Developed end-to-end over 9 months, from conception to full coding and UI/UX design.\`,
+  tasks: [
+    "End-to-end project ownership (needs → conception → design → code)",
+  ],
+  notes: () => {
+    // 9 months development
+    // Full MERN stack
+    // Business Intelligence focus
+    // Real-world school ecosystem
+  }
+};
+  `,
+  },
+
+  {
+    title: "PSC Management Platform",
+    image: PolyPSC_Project,
+    category: "Projet socio-culturel",
+    description: `A web platform to centralize the management of the PSC (Projet socio-culturel) program for first-year engineering students. Built with React.js and Node.js, it automates team formation, project tracking, tutor assignments, deliverable validation, and provides dashboards with KPIs using ApexCharts. Developed solo over 3 months, covering MVP to final release.`,
+    demoLink: "https://google.com/",
+    stacks: [
+      { name: "React", logo: react },
+      { name: "Node.js", logo: nodejs },
+      { name: "JWT", logo: jwt },
+      { name: "ApexCharts", logo: apex },
+    ],
+    video: PolyPSC,
+    projectCode: `
+const project = {
+  name: "PSC Management Platform",
+  description: \`A web platform to centralize the management of the PSC (Projet socio-culturel) program for first-year engineering students. Built with React.js and Node.js, it automates team formation, project tracking, tutor assignments, deliverable validation, and provides dashboards with KPIs using ApexCharts. Developed solo over 3 months, covering MVP to final release.\`,
+  tasks: [
+    "Student, tutor, and team management",
+    "Automated team formation and tutor assignments",
+    "Tracking project deliverables and validation",
+    "Dashboarding with ApexCharts",
+    "Solo development from conception to code",
+  ],
+  notes: () => {
+    // Management System
+    // 2-months development
+    // Progressive MVP approach
+  }
+};
+  `,
+  },
   {
     title: "McLaren Animated Landing Page",
     image: McLaren_Project,
