@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
@@ -10,7 +10,7 @@ import SplashCursor from "./components/SplashCursor";
 import Hero from "./components/Hero";
 import About from "./components/About";
 
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -18,6 +18,13 @@ import LogosLoop from "./components/LogosLoop";
 import GridMotion from "./components/GridMotion";
 
 const App = () => {
+  useEffect(() => {
+    // Call the API to log visitor info
+    fetch("/api/log-visitor")
+      .then((res) => res.json())
+      .then((data) => console.log("Visitor logged:", data));
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -31,7 +38,7 @@ const App = () => {
       <Contact />
       <Footer />
       <SplashCursor />
-       <Analytics />
+      <Analytics />
     </>
   );
 };
