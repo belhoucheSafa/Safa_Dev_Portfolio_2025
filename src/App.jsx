@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Services from "./components/Services";
@@ -16,6 +15,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import LogosLoop from "./components/LogosLoop";
 import GridMotion from "./components/GridMotion";
+
+
+
 
 const App = () => {
   useEffect(() => {
