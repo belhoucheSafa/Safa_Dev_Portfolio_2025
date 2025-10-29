@@ -16,25 +16,48 @@ import "slick-carousel/slick/slick-theme.css";
 import LogosLoop from "./components/LogosLoop";
 import GridMotion from "./components/GridMotion";
 
-
-
+import { UAParser } from "ua-parser-js";
 
 const App = () => {
   useEffect(() => {
-    // Send visitor info to your n8n webhook
-    fetch("https://belhouchesafa.app.n8n.cloud/webhook/c944a2d8-ab93-43a5-be1a-5b6e58844419", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        url: window.location.href,           // current page URL
-        referrer: document.referrer || "—", // where visitor came from
-        timestamp: new Date().toISOString(),// current time
-        userAgent: navigator.userAgent       // browser info
-      }),
-      keepalive: true // ensures request is sent even if the user leaves
-    }).catch(() => {});
-  }, []);
+    const parser = new UAParser();
+    const uaResult = parser.getResult();
 
+    const deviceType = (uaResult.device.type || "desktop").toLowerCase();
+
+    const deviceEmojiMap = {
+      mobile: "📱",
+      tablet: "📱",
+      smarttv: "📺",
+      console: "🎮",
+      wearable: "⌚",
+      desktop: "💻",
+    };
+
+    const deviceEmoji = deviceEmojiMap[deviceType] || "🖥️";
+
+    const deviceInfo = `${deviceEmoji} ${
+      deviceType.charAt(0).toUpperCase() + deviceType.slice(1)
+    } - ${uaResult.os.name || ""} ${uaResult.os.version || ""} - ${
+      uaResult.browser.name || ""
+    } ${uaResult.browser.version || ""}`.trim();
+
+    const payload = {
+      url: window.location.href,
+      referrer: document.referrer || "—",
+      device: deviceInfo,
+    };
+
+    fetch(
+      "https://belhouchesafa.app.n8n.cloud/webhook/c944a2d8-ab93-43a5-be1a-5b6e58844419",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+        keepalive: true,
+      }
+    ).catch(() => {});
+  }, []);
   return (
     <>
       <Navbar />
