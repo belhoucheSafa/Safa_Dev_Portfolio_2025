@@ -19,9 +19,9 @@ const ServiceCard = ({ title, description, icon, color, colorRGB }) => {
                 </h2>
                 <p className="text__muted description">{description}</p>
             </div>
-            <div className="service__card-bottom">
+            {/* <div className="service__card-bottom">
               <SocialHandles />
-            </div>
+            </div> */}
         </div>
     );
 };

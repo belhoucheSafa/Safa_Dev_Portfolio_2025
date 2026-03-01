@@ -20,7 +20,6 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
   const playerRef = useRef(null);
   const modalRef = useRef(null);
 
-  console.log(project);
 
   useEffect(() => {
     if (isOpen) {

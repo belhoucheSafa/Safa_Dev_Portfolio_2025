@@ -16,3 +16,123 @@
     grid-template-columns: 100%;
   }
 }
+
+.projects__header {
+  margin-bottom: 40px !important;
+}
+
+.dicover_more__ai__projects {
+  position: absolute;
+  right: 0;
+  height: 40px;
+  background-color: white;
+  border-radius: 25px;
+  width: fit-content;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.projects__types__btns {
+  height: 40px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.project__type__btn {
+  position: relative;
+  height: 40px;
+  width: fit-content;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 25px;
+
+  cursor: pointer;
+  overflow: hidden;
+  color: var(--color-primary);
+  font-weight: 800;
+  font-size: 16px;
+
+  border-radius: var(--border-radius-5);
+  color: var(--color-text);
+  font-weight: 500;
+  background: var(--color-ui-2);
+  text-align: center;
+  cursor: pointer;
+  color: #9f9f9f;
+}
+.project__type__btn:hover {
+  box-shadow: #7b54eed6 2px 1px 3px 0px inset;
+}
+.selected__project__type__btn {
+  border: 1px solid 1px solid #2d2d2d;
+  box-shadow: #7b54eed6 2px 1px 3px 0px inset;
+}
+
+.coming-soon svg {
+  width: 50px;
+  height: 50px;
+  fill: #fff;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 30px rgba(123, 84, 238, 0.6),
+      0 0 60px rgba(255, 110, 199, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow:
+      0 0 40px rgba(123, 84, 238, 0.8),
+      0 0 70px rgba(255, 110, 199, 0.6);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%; /* full container width */
+  height: 200px; /* fixed height */
+
+  border-radius: 15px;
+  background: linear-gradient(135deg, #7b54ee, #ff6ec7);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  box-shadow:
+    0 0 30px rgba(123, 84, 238, 0.6),
+    0 0 60px rgba(255, 110, 199, 0.4);
+
+  animation: pulse 2s infinite;
+  gap: 15px;
+}

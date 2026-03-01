@@ -216,6 +216,58 @@
   object-fit: contain;
 }
 
+
+.ai__card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.ai__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.badge {
+  background: #111;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.metric {
+  font-size: 12px;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.github__btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.stack__badge {
+  background: rgba(0, 0, 0, 0.08);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+
+.stack__badge:hover {
+  background: black;
+  color: white;
+}
+
 /* Responsive design */
 @media (max-width: 900px) {
   .modal-content {

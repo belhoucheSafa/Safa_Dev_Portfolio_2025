@@ -94,7 +94,7 @@ const expCards = [
   },
   {
     title: "Engineering Cycle – Software Engineering - At Polytechnique Sousse",
-    date: "2024 – Present",
+    date: "2024 – 2025",
     imgPath: "/images/exp1.png",
     logoPath: "/images/timeline5.png",
     rating: 4,
@@ -106,6 +106,23 @@ const expCards = [
     review:
       "This year was pivotal : <br />I advanced my engineering skills while contributing to social projects — volunteering at SOS Akouda and Elder Care Center was one of the most meaningful experiences of my journey !",
   },
+  {
+  title: "Engineering Cycle – Specialization in AI, ML, DL, Data Science & Agentic AI - At Polytechnique Sousse",
+  date: "2025 – Present",
+  imgPath: "/images/exp1.png",
+  logoPath: "/images/timeline5.png",
+  rating: 5,
+  responsibilities: [
+    "Focusing on building and deploying Machine Learning, Deep Learning, and Agentic AI solutions.",
+    "Working on real-world AI projects including predictive analytics, recommendation systems, computer vision, and autonomous agentic systems.",
+    "Integrating intelligent AI/ML/agentic models into web applications for full-stack smart solutions.",
+    "Gaining hands-on experience with Python, PyTorch, TensorFlow, Scikit-Learn, Pandas, and cloud-based AI services.",
+    "Learning data preprocessing, feature engineering, model evaluation, and optimization techniques.",
+    "Exploring advanced Data Science topics: statistical modeling, data visualization, Big Data tools, and autonomous AI agents.",
+  ],
+  review:
+    "This ongoing year is highly enriching : <br />I am gaining hands-on expertise in AI, ML, DL, Data Science, and Agentic AI, developing autonomous intelligent systems and integrating them into real-world applications — strengthening both my technical skills and professional profile.",
+}
 ];
 
 

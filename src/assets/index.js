@@ -15,7 +15,14 @@ export { default as Donuts_Project } from "./ProjectsDemosScreenshots/Donuts__pr
 export { default as McLaren_Project } from "./ProjectsDemosScreenshots/McLaren__project.jpg";
 export { default as PolySchool_Project } from "./ProjectsDemosScreenshots/PolySchool_Project.png";
 export { default as PolyPSC_Project } from "./ProjectsDemosScreenshots/PolyPscManagement_Project.png";
-
+export { default as HeartDisease_ML_Project } from "./ProjectsDemosScreenshots/HeartDisease_ML_Project.png";
+export { default as CaliforniaHousePrice_ML_Project } from "./ProjectsDemosScreenshots/CaliforniaHousePrice_ML_Project.png";
+export { default as DiabeticPrediction_ML_Project } from "./ProjectsDemosScreenshots/DiabeticPrediction_ML_Project.png";
+export { default as GoldPricePrediction_ML_Project } from "./ProjectsDemosScreenshots/GoldPricePrediction_ML_Project.png";
+export { default as MallCustomerSegmentation_ML_Project } from "./ProjectsDemosScreenshots/MallCustomerSegmentation_ML_Project.png";
+export { default as SonarRock_ML_Project } from "./ProjectsDemosScreenshots/SonarRock_ML_Project.png";
+export { default as MovieRecommendation_ML_Project } from "./ProjectsDemosScreenshots/MovieRecommendation_ML_Project.png";
+export { default as BigMartSalesPrediction_ML_Project } from "./ProjectsDemosScreenshots/BigMartSalesPrediction_ML_Project.png";
 
 
 // Icons export (original set)

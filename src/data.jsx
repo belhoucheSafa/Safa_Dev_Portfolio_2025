@@ -1,4 +1,12 @@
-import { FaPaintBrush } from "react-icons/fa";
+import {
+  FaPaintBrush,
+  FaCode,
+  FaProjectDiagram,
+  FaRobot,
+  FaBrain,
+  FaNetworkWired,
+} from "react-icons/fa";
+
 import { SiFiverr } from "react-icons/si";
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { FaCodeCompare } from "react-icons/fa6";
@@ -6,7 +14,6 @@ import { GiIdea } from "react-icons/gi";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
-import { FaCode, FaProjectDiagram } from "react-icons/fa";
 
 import {
   project1,
@@ -22,6 +29,14 @@ import {
   McLaren_Project,
   PolySchool_Project,
   PolyPSC_Project,
+  HeartDisease_ML_Project,
+  CaliforniaHousePrice_ML_Project,
+  DiabeticPrediction_ML_Project,
+  GoldPricePrediction_ML_Project,
+  MallCustomerSegmentation_ML_Project,
+  SonarRock_ML_Project,
+  MovieRecommendation_ML_Project,
+  BigMartSalesPrediction_ML_Project,
   tailwind,
   react,
   emailicon,
@@ -58,7 +73,6 @@ import CoffeeAnimation from "./assets/projectsDemos/CoffeeAnimation.mp4";
 import DonutsAnimation from "./assets/projectsDemos/Donuts.mp4";
 import PolySchool from "./assets/projectsDemos/PolySchoolProject.mp4";
 import PolyPSC from "./assets/projectsDemos/PSCProject.mp4";
-
 export const menu = [
   { name: "About" },
   { name: "Services" },
@@ -82,8 +96,8 @@ export const services = [
     icon: <FaCode />,
     color: "blueviolet",
     colorRGB: "138, 43, 226",
-    description: `I build responsive and high-performance applications using modern technologies 
-                  like React, Node.js, and more. My work covers everything from frontend to backend, 
+    description: `I build responsive and high-performance applications using modern technologies.
+                  My work covers everything from frontend to backend, 
                   creating scalable, maintainable, and efficient solutions for real-world problems.`,
   },
   {
@@ -94,6 +108,37 @@ export const services = [
     description: `I am involved in the full lifecycle of software projects, including planning, 
                   architecture design, and implementation. I ensure that ideas are transformed 
                   into practical and robust solutions that meet technical and business requirements.`,
+  },
+  {
+    title: (
+      <>
+        AI & Machine Learning <br />& Deep Learning
+      </>
+    ),
+    icon: <FaBrain />,
+    color: "#7ec8e3",
+    colorRGB: "126, 200, 227",
+    description: `I develop intelligent solutions using AI and ML models to solve complex problems. 
+                From predictive analytics to recommendation systems, I apply state-of-the-art algorithms 
+                to extract insights and automate decision-making processes.`,
+  },
+  {
+    title: "Intelligent Agents Integration",
+    icon: <FaRobot />,
+    color: "#7b54ee",
+    colorRGB: "123, 84, 238",
+    description: `I integrate AI agents into web applications to enhance automation, user interaction, 
+                  and personalization. These agents can handle tasks, provide recommendations, 
+                  and communicate naturally with users, bridging AI with real-world applications.`,
+  },
+  {
+    title: "Data & AI Pipelines",
+    icon: <FaNetworkWired />,
+    color: "#10b981",
+    colorRGB: "16, 185, 129",
+    description: `I design and implement robust data pipelines and workflows for AI projects. 
+                  This includes data collection, preprocessing, model training, deployment, 
+                  and monitoring to ensure scalable and reliable AI-powered applications.`,
   },
 ];
 
@@ -449,6 +494,211 @@ const project = {
   }
 };
   `,
+  },
+];
+
+export const aiProjects = [
+  {
+    id: 1,
+    type: "ai",
+    title: "Heart Disease Prediction",
+    image: HeartDisease_ML_Project,
+    category: "Machine Learning - Classification",
+    description:
+      "A binary classification model that predicts heart disease using Logistic Regression and medical indicators.",
+
+    mlType: "Classification",
+    algorithm: "Logistic Regression",
+
+    metrics: {
+      trainAccuracy: 0.87,
+      testAccuracy: 0.86,
+    },
+
+    github: "https://github.com/SafaBelh/Heart-disease-prediction",
+
+    stacks: ["Python", "Scikit-Learn", "Pandas"],
+  },
+  {
+    id: 2,
+    type: "ai",
+    title: "Movie Recommendation System",
+    image: MovieRecommendation_ML_Project,
+    category: "Machine Learning - Recommendation System",
+    description:
+      "A content-based movie recommendation system using TF-IDF and Cosine Similarity to suggest movies based on their content features.",
+
+    mlType: "Recommendation",
+    algorithm: "TF-IDF + Cosine Similarity",
+
+    github: "https://github.com/SafaBelh/Movies-Recommendation-System",
+
+    stacks: ["Python", "NumPy", "Pandas", "Scikit-Learn", "Difflib"],
+  },
+
+  {
+    id: 3,
+    type: "ai",
+    title: "Gold Price Prediction",
+    image: GoldPricePrediction_ML_Project,
+    category: "Machine Learning - Regression",
+    description:
+      "A regression model using Random Forest Regressor to predict Gold (GLD) prices based on financial market indicators.",
+
+    mlType: "Regression",
+    algorithm: "Random Forest Regressor",
+
+    metrics: {
+      r2: 0.98,
+    },
+
+    github: "https://github.com/SafaBelh/Gold-Price-Prediction",
+
+    stacks: [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "Seaborn",
+      "Scikit-Learn",
+    ],
+  },
+
+  {
+    id: 4,
+    type: "ai",
+    title: "Diabetic Prediction ML Project",
+    image: DiabeticPrediction_ML_Project,
+    category: "Machine Learning - Classification",
+    description:
+      "A binary classification model using SVM (Linear Kernel) to predict diabetes status based on health indicators.",
+
+    mlType: "Classification",
+    algorithm: "SVM (Linear Kernel)",
+
+    metrics: {
+      trainAccuracy: 0.78,
+      testAccuracy: 0.77,
+    },
+
+    github: "https://github.com/SafaBelh/Diabetic-Prediction-ML-Project",
+
+    stacks: [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Scikit-Learn",
+      "Matplotlib",
+      "Seaborn",
+    ],
+  },
+
+  {
+    id: 5,
+    type: "ai",
+    title: "BigMart Sales Prediction",
+    image: BigMartSalesPrediction_ML_Project,
+    category: "Machine Learning - Regression",
+    description:
+      "A regression model using XGBoost to predict sales of items at BigMart outlets based on product and outlet features.",
+
+    mlType: "Regression",
+    algorithm: "XGBoost Regressor",
+
+    metrics: {
+      trainAccuracy: 0.8616,
+      testAccuracy: 0.5445,
+    },
+
+    github: "https://github.com/SafaBelh/BigMart-sales-prediction",
+
+    stacks: [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Scikit-Learn",
+      "XGBoost",
+      "Matplotlib",
+      "Seaborn",
+    ],
+  },
+
+  {
+    id: 6,
+    type: "ai",
+    title: "Mall Customer Segmentation",
+    image: MallCustomerSegmentation_ML_Project,
+    category: "Machine Learning - Clustering",
+    description:
+      "A K-Means clustering model that segments mall customers into groups based on annual income and spending score.",
+
+    mlType: "Clustering",
+    algorithm: "K-Means",
+
+    github: "https://github.com/SafaBelh/Mall-Customer-Segmentation",
+
+    stacks: [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "Seaborn",
+      "Scikit-Learn",
+    ],
+  },
+  {
+    id: 7,
+    type: "ai",
+    title: "Sonar Rock vs. Mine Classification",
+    image: SonarRock_ML_Project,
+    category: "Machine Learning - Classification",
+    description:
+      "A binary classification model using Logistic Regression to classify underwater sonar signals as Rock or Mine.",
+
+    mlType: "Classification",
+    algorithm: "Logistic Regression",
+
+    metrics: {
+      trainAccuracy: 0.83,
+      testAccuracy: 0.76,
+    },
+
+    github: "https://github.com/SafaBelh/Sonar-Rock-vs-Mine-Classification",
+
+    stacks: ["Python", "NumPy", "Pandas", "Scikit-Learn", "Matplotlib"],
+  },
+  {
+    id: 8,
+    type: "ai",
+    title: "California House Price Prediction",
+    image: CaliforniaHousePrice_ML_Project,
+    category: "Machine Learning - Regression",
+    description:
+      "A regression model using XGBoost to predict California house prices based on housing features.",
+
+    mlType: "Regression",
+    algorithm: "XGBoost Regressor",
+
+    metrics: {
+      trainR2: 0.8363,
+      testR2: 0.8007,
+      trainMAE: 32448,
+      testMAE: 34558,
+      trainRMSE: 46778,
+      testRMSE: 51099,
+    },
+
+    github: "https://github.com/SafaBelh/California-House-Price-Prediction",
+
+    stacks: [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Scikit-Learn",
+      "XGBoost",
+      "Matplotlib",
+      "Seaborn",
+    ],
   },
 ];
 
