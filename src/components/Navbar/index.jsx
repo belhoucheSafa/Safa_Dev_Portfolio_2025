@@ -53,8 +53,8 @@ const Navbar = () => {
 
         <div className="sidebar__bottom">
           <a
-            href="/Safa Belhouche_CV _EN&FR.pdf"
-            download="SafaBelhouch_CV_FR&EN.pdf"
+            href="/Safa_Belhouche_CV_EN&FR.pdf"
+            download="Safa_Belhouche_CV_EN&FR.pdf"
             className="download__cv__btn"
           >
             <div className="download__cv__btn-inner">
@@ -66,8 +66,8 @@ const Navbar = () => {
 
       <div className="flex__center buttons__wrapper">
         <a
-          href="/Safa Belhouche_CV _EN&FR.pdf"
-            download="SafaBelhouch_CV_FR&EN.pdf"
+          href="/Safa_Belhouche_CV_EN&FR.pdf"
+            download="Safa_Belhouche_CV_EN&FR.pdf"
           className="download__cv__btn desktop-only"
         >
           <div className="download__cv__btn-inner">
