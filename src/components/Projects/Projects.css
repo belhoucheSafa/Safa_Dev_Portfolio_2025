@@ -43,7 +43,6 @@
   align-items: center;
   justify-content: flex-start;
   gap: 30px;
-
   margin: auto;
   margin-bottom: 50px;
 }
@@ -135,4 +134,15 @@
 
   animation: pulse 2s infinite;
   gap: 15px;
+}
+
+
+@media (max-width: 650px) {
+  .projects__types__btns {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 80px;
+    justify-content: center;
+  }
 }
