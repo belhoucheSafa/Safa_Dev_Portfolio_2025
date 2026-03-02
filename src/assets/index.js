@@ -35,6 +35,7 @@ export { default as reactnative } from "./icons/reactnative.svg";
 export { default as emailicon } from "./icons/email.png";
 export { default as messengericon } from "./icons/messenger.png";
 export { default as whatsappicon } from "./icons/whatsapp.png";
+export { default as linkedinicon } from "./icons/linkedin.png";
 
 // Icons export (new set)
 export { default as css } from "./css.png";

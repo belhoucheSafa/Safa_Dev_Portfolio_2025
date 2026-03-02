@@ -14,6 +14,7 @@ import { GiIdea } from "react-icons/gi";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
+import { LuLinkedin } from "react-icons/lu";
 
 import {
   project1,
@@ -40,7 +41,7 @@ import {
   tailwind,
   react,
   emailicon,
-  messengericon,
+  linkedinicon,
   whatsappicon,
   mongodb,
   nodejs,
@@ -709,15 +710,16 @@ export const contactInfo = [
     link: "mailto:safabelhouch@gmail.com",
     icon: emailicon,
     btnIcon: <MdOutlineEmail />,
-    color: "rgb(56,115,205)",
+    color: "rgb(197 74 83)",
   },
+
   {
-    name: "Messenger",
+    name: "Linkedin",
     value: "safa Belhouche",
-    link: "#",
-    icon: messengericon,
-    btnIcon: <RiMessengerLine />,
-    color: "rgb(139,74,251)",
+    link: "www.linkedin.com/in/safa-belhouche-436601387",
+    icon: linkedinicon,
+    btnIcon: <LuLinkedin />,
+    color: "rgb(56,115,205)",
   },
   {
     name: "WhatsApp",
@@ -737,12 +739,12 @@ export const socialHandles = [
   {
     name: "Github",
     icon: <AiFillGithub />,
-    link: "",
+    link: "https://github.com/SafaBelh",
   },
   {
     name: "LinkedIn",
     icon: <AiFillLinkedin />,
-    link: "",
+    link: "www.linkedin.com/in/safa-belhouche-436601387",
   },
   {
     name: "Youtube",
