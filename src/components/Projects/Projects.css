@@ -131,6 +131,7 @@
   box-shadow:
     0 0 30px rgba(123, 84, 238, 0.6),
     0 0 60px rgba(255, 110, 199, 0.4);
+    
 
   animation: pulse 2s infinite;
   gap: 15px;
